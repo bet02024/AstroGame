@@ -1,4 +1,4 @@
-# Astro Mini Telegram App
+# Astro Telegram Web App Game
 
 
 ![banner](https://github.com/user-attachments/assets/e40dc5d8-67e7-4d16-a1a3-b8fc6986f93d)
