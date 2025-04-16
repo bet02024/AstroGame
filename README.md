@@ -1,6 +1,12 @@
 # Astro Mini Telegram App
 
+
+![banner](https://github.com/user-attachments/assets/e40dc5d8-67e7-4d16-a1a3-b8fc6986f93d)
+
 Astro is a fast-paced game where players cash out earnings as a rocket’s value climbs from 1x to 100x before it crashes randomly 🚀🧑‍🚀
+
+
+https://github.com/user-attachments/assets/689c1cb7-fb96-4119-95a7-da945f3f0412
 
 
 # Telegram Mini App
