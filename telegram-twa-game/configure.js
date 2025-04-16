@@ -42,26 +42,12 @@ let githubUsername, githubRepo, botUsername;
   const accessToken = await question("Enter your bot access token: ");
   if (!accessToken?.length > 0) exitError("Token is required");
 
-  const githubUsernameQ = await question(
-    `Enter your github username${
-      githubUsername ? ` (${githubUsername})` : ``
-    }: `
-  );
-  githubUsername = githubUsernameQ || githubUsername;
-  if (!githubUsername?.length > 0) exitError("Github username is required");
-
-  const githubRepoQ = await question(
-    `Enter your forked repo name${githubRepo ? ` (${githubRepo})` : ``}: `
-  );
-  githubRepo = githubRepoQ || githubRepo;
-  if (!githubRepo?.length > 0) exitError("Repo name is required");
-
   const getBot = await axios.get(
     `https://api.telegram.org/bot${accessToken}/getMe`
   ).catch(exitError);
 
   botUsername = getBot.data.result.username;
-  const url = `https://${githubUsername}.github.io/${githubRepo}`;
+  const url = "https://astrodegen.com";
 
   console.log(`\n\nSetting bot ${botUsername} webapp url to ${url}`);
 
@@ -70,7 +56,7 @@ let githubUsername, githubRepo, botUsername;
     {
       menu_button: {
         type: "web_app",
-        text: "Launch Webapp",
+        text: "Launch Astro",
         web_app: {
           url: url,
         },
